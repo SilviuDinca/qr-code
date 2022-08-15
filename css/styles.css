@@ -1,3 +1,45 @@
-.pa {
-  color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  background-color: hsl(0, 0%, 100%);
+  width: 17%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card-container > img {
+  border-radius: 10px;
+}
+
+.card-container > h2 {
+  color: hsl(218, 44%, 22%);
+}
+
+.card-container > p {
+  color: hsl(220, 15%, 55%);
+  margin-top: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .card-container {
+    width: 100%;
+    margin: 0 30px;
+  }
 }
